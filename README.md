@@ -40,6 +40,10 @@ something lives here instead of `homebrew/core` or `homebrew/cask`.
     `$XDG_CONFIG_HOME/davmail/davmail.properties` (fallback: `~/.config/...`).
   - Note: this duplicates `homebrew/core`’s `davmail` formula; use the
     tap‑qualified name to avoid ambiguity (e.g., `brew install jkorb/personal/davmail`).
+- `nnn-nerd` (formula)
+  - Reason: `nnn` with Nerd Font icon support (`O_NERD=1`) enabled at build time.
+  - Note: this duplicates `homebrew/core`’s `nnn` formula; install with
+    `brew install jkorb/personal/nnn-nerd`.
 
 ## References
 
