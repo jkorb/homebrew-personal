@@ -29,6 +29,11 @@ something lives here instead of `homebrew/core` or `homebrew/cask`.
     with the tap-qualified name (e.g., `brew install jkorb/personal/alacritty`).
   - Gatekeeper note: the app is not notarized, so macOS will block first launch.
     Open it once, then allow it in System Settings > Privacy & Security.
+- `browserpass` (formula)
+  - Reason: the upstream Homebrew tap (amar1729/formulae) is outdated, so this
+    keeps the native host current for macOS.
+  - Install note: after install, run the browser host configuration from the
+    installed Makefile (see caveats printed by `brew`).
 
 ## References
 
