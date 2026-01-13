@@ -6,6 +6,8 @@ class NnnNerd < Formula
   license "BSD-2-Clause"
   head "https://github.com/jarun/nnn.git", branch: "master"
 
+  conflicts_with "nnn", because: "both install the `nnn` binary"
+
   depends_on "gnu-sed"
   depends_on "ncurses"
   depends_on "readline"
