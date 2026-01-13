@@ -34,6 +34,12 @@ something lives here instead of `homebrew/core` or `homebrew/cask`.
     keeps the native host current for macOS.
   - Install note: after install, run the browser host configuration from the
     installed Makefile (see caveats printed by `brew`).
+- `davmail` (formula)
+  - Reason: the core formula’s service runs on a 5‑minute interval without a
+    config; this tap keeps it running with a user config in
+    `$XDG_CONFIG_HOME/davmail/davmail.properties` (fallback: `~/.config/...`).
+  - Note: this duplicates `homebrew/core`’s `davmail` formula; use the
+    tap‑qualified name to avoid ambiguity (e.g., `brew install jkorb/personal/davmail`).
 
 ## References
 
