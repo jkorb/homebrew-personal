@@ -27,6 +27,8 @@ something lives here instead of `homebrew/core` or `homebrew/cask`.
     maintainer noted they do not use macOS and won’t sign for Apple.
   - Install note: this name conflicts with `homebrew/cask/alacritty`, so install
     with the tap-qualified name (e.g., `brew install jkorb/personal/alacritty`).
+  - Gatekeeper note: the app is not notarized, so macOS will block first launch.
+    Open it once, then allow it in System Settings > Privacy & Security.
 
 ## References
 
