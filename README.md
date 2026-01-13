@@ -13,6 +13,25 @@ tap "jkorb/personal"
 brew "<formula>"
 ```
 
+## Why this tap
+
+This tap is mostly for my macOS migration and for keeping a paper trail of why
+something lives here instead of `homebrew/core` or `homebrew/cask`.
+
+## What’s inside (and why)
+
+- `alacritty` (cask)
+  - Reason: upstream does not sign the macOS build with an Apple Developer ID,
+    and Homebrew/cask has marked it deprecated due to Gatekeeper requirements.
+    A Homebrew maintainer suggested running a custom tap, and the Alacritty
+    maintainer noted they do not use macOS and won’t sign for Apple.
+  - Install note: this name conflicts with `homebrew/cask/alacritty`, so install
+    with the tap-qualified name (e.g., `brew install jkorb/personal/alacritty`).
+
+## References
+
+- https://github.com/alacritty/alacritty/issues/8749
+
 ## Documentation
 
 `brew help`, `man brew` or check [Homebrew's documentation](https://docs.brew.sh).
