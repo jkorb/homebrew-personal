@@ -44,6 +44,11 @@ something lives here instead of `homebrew/core` or `homebrew/cask`.
   - Reason: `nnn` with Nerd Font icon support (`O_NERD=1`) enabled at build time.
   - Note: this duplicates `homebrew/core`’s `nnn` formula; install with
     `brew install jkorb/personal/nnn-nerd`.
+- `khal` (formula)
+  - Reason: testing a newer `urwid` (3.0.4) than the core formula to fix
+    breakage; built from GitHub tarball with a setuptools-scm version hint.
+  - Note: this duplicates `homebrew/core`’s `khal` formula; install with
+    `brew install jkorb/personal/khal`.
 
 ## References
 
