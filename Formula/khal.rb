@@ -8,6 +8,10 @@ class Khal < Formula
   license "MIT"
   head "https://github.com/pimutils/khal.git", branch: "master"
 
+  livecheck do
+    url :stable
+  end
+
   depends_on "python@3.14"
 
   resource "click" do
