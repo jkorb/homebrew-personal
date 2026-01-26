@@ -49,6 +49,9 @@ something lives here instead of `homebrew/core` or `homebrew/cask`.
     breakage; built from GitHub tarball with a setuptools-scm version hint.
   - Note: this duplicates `homebrew/core`’s `khal` formula; install with
     `brew install jkorb/personal/khal`.
+- `lua@5.1` (formula)
+  - Reason: install Lua 5.1 from source for compatibility with legacy tooling.
+  - Note: versioned formula; install with `brew install jkorb/personal/lua@5.1`.
 
 ## References
 
