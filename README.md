@@ -53,6 +53,11 @@ something lives here instead of `homebrew/core` or `homebrew/cask`.
   - Reason: install Lua 5.1 from source for compatibility with legacy tooling.
   - Note: versioned formula; install with `brew install jkorb/personal/lua@5.1`.
   - Reminder: run `brew link --force lua@5.1` to expose `lua5.1` in `/opt/homebrew/bin`.
+- `prover9` (formula)
+  - Reason: install the full LADR toolchain from source, including `prooftrans`
+    (Homebrew/core installs only `prover9` and `mace4`).
+  - Note: this duplicates `homebrew/core`'s `prover9`; install with
+    `brew install jkorb/personal/prover9`.
 
 ## References
 
