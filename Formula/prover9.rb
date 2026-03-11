@@ -11,7 +11,7 @@ class Prover9 < Formula
     regex(/href=.*?LADR[._-]v?(\d+(?:[.-]\d+[A-Z]?)+)\.t/i)
   end
 
-  no_autobump! because: :requires_manual_review
+  no_autobump! because: "upstream releases require manual review"
 
   on_linux do
     patch :DATA
@@ -24,9 +24,8 @@ class Prover9 < Formula
     ENV.deparallelize
     system "make", "all"
 
-    Dir["bin/*"].each do |f|
-      bin.install f unless File.directory?(f)
-    end
+    bin.install Dir["bin/*"].select { |f| File.file?(f) && File.executable?(f) }
+    pkgshare.install "bin/proof3fo.xsl" if (buildpath/"bin/proof3fo.xsl").exist?
 
     man1.install Dir["manpages/*.1"]
   end
